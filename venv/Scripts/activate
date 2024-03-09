@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\timul\OneDrive\Desktop\python\newskorea\venv"
+VIRTUAL_ENV="C:\Users\timul\Desktop\python\learnproject\learn\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

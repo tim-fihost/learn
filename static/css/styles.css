@@ -99,3 +99,13 @@ body {
     color: #39ff14; /* Neon grey color */
     font-size: 20px;
 }
+
+
+.this{
+    background-image: url("https://wallpapercave.com/wp/wp5813847.jpg");
+    background-repeat: no-repeat;
+    width: 100%; /* Make the image take up the full width of its container */
+    height: 100%; /* Make the image take up the full height of its container */
+    object-fit: cover; /* Resize the image to cover its container while preserving aspect ratio */
+    background-position: center;
+    background-size: cover;}
