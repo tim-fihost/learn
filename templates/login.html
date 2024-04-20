@@ -1,11 +1,17 @@
 {% from "bootstrap5/form.html" import render_form %}
-{% include "header.html"%}
+{% include  "header.html"%}
+{% extends "base.html"%}
 <body>
-    <main class="mb-4">
-        <div class="container">
-            <div class="col-lg-8 col-md-10 mx-auto">
-                <!--TODO: render login form here-->
-                {{render_form(form, novalidate=True,button_map={"submit": "primary"})}}
-        </div>
-    </main>
+    {%block title%} <h1>Welcome Back!</h1>{%endblock%}
+    {% block paragraph%}{%endblock%}
+    {%block content%}
+        <main class="mb-4">
+            <div class="container">
+                <div class="col-lg-8 col-md-10  mx-auto">
+                    {{render_form(form, novalidate=True,button_map={"submit": "primary"})}}
+                </div>
+        </main>
+    {%endblock%}    
 </body>
+{%block footer%}
+{%endblock%}

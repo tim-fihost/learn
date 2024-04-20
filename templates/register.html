@@ -1,6 +1,17 @@
 {% from "bootstrap5/form.html" import render_form %}
 {% include "header.html" %}
+{% extends "base.html"%}
+{%block style%}
+    <style>
+        .this{
+            background-image: url(https://cdnb.artstation.com/p/assets/images/images/036/949/047/large/daniel-maland-watchers.jpg?1619056975)
+            }
+    </style>
+{%endblock%}
 <body>
+    {%block title%} <h1>Hello Welcome to our page!</h1>{%endblock%}
+    {% block paragraph%}{%endblock%}
+    {%block content%}
     <main class="mb-4">
         <div class="container">
             <div class="col-lg-8 col-md-10 mx-auto">
@@ -8,4 +19,6 @@
             </div>
         </div>
     </main>
+    {%endblock%}
 </body>
+{%block footer%}{%endblock%}

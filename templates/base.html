@@ -1,0 +1,28 @@
+{%block style %}
+    <style>
+        .this{
+            background-image: url(https://dnewpydm90vfx.cloudfront.net/wp-content/uploads/2018/09/Cyber-security.jpg)
+            }
+    </style>
+{%endblock%}
+{%block pic%}
+<div class="this">
+  <section class="py-5 text-start container ">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8">
+        {%block title %} <h1 class="title">  Title   </h1>{%endblock%}
+        <p class="breif"> {% block paragraph%}Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely. {%endblock%}</p>
+          {%block buttons %}
+            <button class="glow-on-hover" type="button">Read Me</button>
+            <button class="glow-on-hover" type="button">Save!</button>
+          {%endblock%}
+      </div>
+    </div>
+  </section>
+</div>
+{%endblock%}
+{%block content%}
+{% endblock %}
+{%block footer%}
+{% include "footer.html"%}
+{%endblock%}

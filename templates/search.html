@@ -1,0 +1,53 @@
+{% include "header.html" %}
+{% extends "base.html" %}
+{%block style %}
+    <style>
+        .this{
+            background-image: url(https://wallpapercave.com/wp/wp7475083.png)
+            }
+    </style>
+{%endblock%}
+<style>
+    .h1{
+        color: blue
+    }
+</style>
+<body>
+    {%block title%}{%endblock%}
+    {% block paragraph%}{%endblock%}
+    {%block buttons%}{%endblock%}
+    {% block content %}
+    <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4" src="static/assets/Libya-Flag-Map.svg" alt="" width="90" height="77">
+        <h1 class="display-5 fw-bold text-body-emphasis">Centered hero</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Download Any Video With Us!</p>
+            <form method="POST" action="/search"> 
+                <div class="input-group flex-nowrap">
+                    <input type="text" name="path" class="form-control" placeholder="paste link"  aria-describedby="addon-wrapping">
+                    <button type="submit" class="btn btn-success btn-lg">Search</button>
+                </div>
+            </form>  
+        </div>
+      </div>
+      {%if action%}
+      <div class="container my-5">
+        <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
+          <button type="button" class="position-absolute top-0 end-0 p-3 m-3 btn-close bg-secondary bg-opacity-10 rounded-pill" aria-label="Close"></button>
+          <svg class="bi mt-5 mb-3" width="48" height="48"><use xlink:href="#check2-circle"></use></svg>
+          <h1 class="text-body-emphasis">Placeholder jumbotron</h1>
+          <p class="col-lg-6 mx-auto mb-4">
+            This faded back jumbotron is useful for placeholder content. It's also a great way to add a bit of context to a page or section when no content is available and to encourage visitors to take a specific action.
+          </p>
+          <button class="btn btn-primary px-5 mb-5" type="button">
+            Call to action
+          </button>
+        </div>
+      </div>
+      {%endif%}
+    {% endblock %}
+</body>
+
+{%block footer%}
+{% include "footer.html"%}
+{%endblock%}
